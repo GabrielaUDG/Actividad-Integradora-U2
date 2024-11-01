@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:ital,wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+// Variables
+$offwhite: #EEE8D6;
+$darkblue: #022933;
+$red: #D14348;
+$blue: #0076A3;
+$color-backgrounds: $offwhite;
+$font-highlight: 'Bree Serif', Helvetica, sans-serif;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  background-color: $color-backgrounds;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: $font-highlight;
+  color: $red;
+}
+
+// Clase base para los botones
+.btn {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-family: 'Merriweather', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5em;
+  color: $offwhite;
+}
+
+// Extensiones para botones específicos
+.btn-principal {
+  @extend .btn;
+  background-color: $darkblue;
+}
+
+.btn-alerta {
+  @extend .btn;
+  background-color: $red;
+}
+
+.btn-error {
+  @extend .btn;
+  background-color: $blue;
+}
